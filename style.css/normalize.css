@@ -1,0 +1,148 @@
+/* Обнулення стилів */
+
+/* Загальні обнулення для всіх елементів */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* Основні обнулення для body */
+body {
+    line-height: 1;
+}
+
+/* Відключення автоматичного змінення розміру шрифтів на деяких мобільних пристроях */
+@media only screen and (max-width: 480px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+/* Обнулення стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Зображення масштабуються пропорційно та відображаються як блоки */
+img {
+    /*max-width: 100%;*/
+    height: auto;
+    display: block;
+}
+
+/* Загальні обнулення для форм, кнопок, textarea і select */
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Відключення декоративних підкреслень для посилань */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Відключення маркерів списків */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Задання моноширинного шрифту для коду */
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+}
+
+/* Відключення лапок в blockquote та q */
+blockquote,
+q {
+    quotes: none;
+}
+
+/* Виправлення багів з відображенням blockquote та q */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+/* Задання блочного відображення для HTML5-семантичних елементів */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Відключення стандартного вигляду кнопок у IE */
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/* Обнулення стилів для checkbox та radio input в різних браузерах */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Виправлення багів для input[type="number"] у WebKit */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Виправлення багів для input[type="search"] у WebKit */
+input[type="search"] {
+    -webkit-appearance: none;
+    box-sizing: content-box;
+}
+
+/* Виправлення багів для input[type="search"] у WebKit */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/* Виправлення багів для textarea у WebKit */
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+/* Забезпечення інлайн-блок відображення для audio та video */
+audio,
+video {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
